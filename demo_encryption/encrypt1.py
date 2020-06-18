@@ -12,7 +12,6 @@ def encrypt(val):
     occurence = dict()
     res = []
     res = [(int(x) if x.isdigit() else -1) for x in str(val)]  #enlists the various digits in val
-    #print(res)
     for i in range(len(res)):
         res[i]=d[res[i]]
         if(res[i] not in occurence):
@@ -20,13 +19,8 @@ def encrypt(val):
         else:
             occurence[res[i]]+=1        #if a number is repeated, increments the ascii by number of times it occurs
             res[i]=functools.reduce(lambda x,y: x+y,[chr(ord(x)+occurence[res[i]]) for x in res[i]])
-        #res[i]=d[res[i]]
-    #print("res:",val,res)
-
     for i in range(len(res)):
         ls = [key[x] for x in res[i]]   #this substitutes the previously obtained values with the key (qwerty)
         res[i] = functools.reduce(lambda x,y: x+y,ls)
-    #print(res)
     final = functools.reduce(lambda x,y: x+y,res) #concatenates the encrypted segments into one string
-    #print(final)
     return final
