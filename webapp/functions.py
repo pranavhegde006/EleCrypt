@@ -12,8 +12,6 @@ def machagiveno(sesnornum,firebaseapp,time):
                 return i[j]
 
 
-def encrypt(data):
-    return data
 
 
 d = {0 : "zero", 1 : "one", 2 : "two", 3 : "three", 4 : "four", 5 : "five", 6 : "six",\
