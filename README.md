@@ -1,12 +1,10 @@
 # Elecrypt
 
-# CODS Summer project 2020
+CODS Summer project 2020
 
-# Team : 
+Team : 
 
-# Iot: 
-Gautham YS, Shubhanga Amardeep
+Iot: Gautham YS, Shubhanga Amardeep
 
-# Cryptography: 
-Saileshwar Karthik, Pranav Hegde, 
+Cryptography: Saileshwar Karthik, Pranav Hegde, 
 
